@@ -1,0 +1,51 @@
+table{
+	margin:1em auto;
+	font-size: 150%;
+}
+
+caption::first-letter{
+	font-family: Cursive;
+	color: #FF0000;
+}
+
+caption{
+	font-size: 32px;
+	color: #808080;
+}
+
+th {
+	background: #CCCCCC;
+}
+
+
+
+thead th:first-child { /* selects the first th inside of the thead */
+	border-top-left-radius: 5px; /* we need to apply the rounding to the th because the tr doesn't support this property */
+}
+
+thead th:last-child { /* selects the last th inside of the thead */
+	border-top-right-radius: 5px;
+}
+
+tfoot th:first-child { /* selects the first th inside of the tfoot */
+	border-bottom-left-radius: 5px;
+}
+
+tfoot td:last-child { /* selects the last td inside of the tfoot */
+	border-bottom-right-radius: 5px;
+	background: #FF66FF;
+	font-size: 140%;
+	height: 2em;
+}
+
+tbody tr:nth-child(odd) { /* select the odd-numbered rows */
+	background: #FCFFF5;
+}
+tbody tr:nth-child(even) { /* selects the even-numbered rows */
+	background: #D1DBBD;
+}
+tbody tr:hover { /* changes styles of the row when hovered */
+	background: #3E606F;
+	color: #FFF;
+	font-style: italic;
+}
