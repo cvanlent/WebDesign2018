@@ -1,0 +1,200 @@
+/*-----MAIN-----*/
+html {
+  box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+}
+/*skip content*/
+.skip{
+	position: absolute;
+	left: -999px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	z-index: -999;
+	color: #E3AD02;
+}
+a.skip:active, a.skip:focus, a.skip:hover {
+    position:fixed;
+    top: auto;
+    left: auto; 
+	width: auto; 
+	height: auto; 
+	overflow: visible;
+	z-index: 999;
+}
+html, body, header, footer{
+    background-color: #ECECEA;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header, footer, .logo {
+	background-color: #211D24;
+	color: #DDDDDA; 
+}
+body{
+	display: flex;
+	flex-direction: column;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Quicksand', sans-serif;
+}
+p{
+	font-family: 'Open Sans', sans-serif;
+}
+h1{ 
+	font-size: 1.75em;
+}
+h2{
+	font-size: 1.5em;
+}
+h3{
+	font-size: 1.17em;
+}
+h4{
+	font-size: 1.12em;
+}
+h5{
+	font-size: .83em;
+}
+h6{
+	font-size: .75em;
+}
+.main-content{
+	flex: 1 0 auto;
+	margin-top: 110px;
+}
+.about, .work, .crafts, .contact{
+	margin: auto;
+	padding-right: 3%;
+	padding-left: 3%;
+}
+
+/*-----HEADER & NAVIGATION-----*/
+header{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 105%;
+    box-shadow: 0px 18px 26px 1px rgba(141, 141, 139, .75);
+    width: 100%;
+    position: fixed;
+}
+/*mobile-first*/
+.top-nav ul{
+	list-style-type: none;
+	padding: 0;
+	background-color: #211D24; /*CHANGE*/
+	margin: 0;
+	display: block;
+}
+.top-nav ul li, .menu-icon{
+	border-top: 1px solid #DDDDDA; /*CHANGE*/
+}
+.top-nav ul li a{
+	font-size: 1em;
+	color: #DDDDDA; /*CHANGE*/
+	text-decoration: none;
+	padding: .5em 1em;
+	display: block;
+	text-align: center;
+}
+.menu-icon a{
+	font-size: 1em;
+	color: #DDDDDA; /*CHANGE*/
+	text-decoration: none;
+	padding: .5em 1em;
+	display: block;
+	text-align: center;
+}
+.top-nav ul li a.current-page{
+	color: #F54320;
+	font-weight: bold;
+}
+.top-nav ul li a.current-page:before {
+  content: "\27A4  ";
+  color: #F54320;
+  padding-right: 4px;
+  position: relative;
+  top: 1px;
+}
+.top-nav ul li a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus{
+    background-color: #E3AD02;
+    color: #DDDDDA;
+    font-weight: bold;
+}
+.top-nav ul li a:hover:before, .top-nav ul li a:focus:before{
+    content: "\27A4  ";
+  	color: #DDDDDA;
+  	padding-right: 4px;
+  	position: relative;
+  	top: 1px;
+}
+/*implement menu toogle*/
+.top-nav.toggle-open ul{
+	display: block;
+}
+
+/*-----LOGO-----*/
+.logo{
+	background-color: #211D24; /*CHANGE*/
+	margin: 0;
+	text-align: center;
+	padding: .25em .75em;
+}
+.logo img{
+	height: 3em;
+}
+
+/*-----FOOTER-----*/
+footer{
+	/*color: #F54320;*/
+	font-size: .85em;
+	text-align: center;
+	box-shadow: 0px -10px 30px 2px rgba(141, 141, 139, .75);
+}
+footer p{
+	padding-top: .5em;
+	padding-bottom: .75em;
+}
+
+.icon{
+	padding: .5em .25em 0;
+	height: 25px;
+}
+
+/*-----HOMEPAGE-----*/
+.main-content-home{
+	margin-top: 250px;
+}
+.home-flag{
+	background-color: #17BEBB;
+	color: #DDDDDA;
+	display: flex;
+	flex-direction: column;
+	max-width: 300px;
+	margin: auto;
+	padding: 1.5em;
+	box-shadow: 0px 8px 10px gray, -10px 8px 15px gray, 10px 8px 15px gray;
+}
+
+/*-----IMAGES PAGE ------*/
+.main-content-crafts{
+	margin-top: 250px;
+}
+/*photo gallery*/
+.crafts{
+	display: block;
+	margin: auto;
+	max-width: 1200px;
+}
+.photo-cell{
+	margin-bottom: 2%;
+	margin-left: 2%;
+}
+.photo-cell img {
+	width: 98%;
+  	display: block;
+  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+}

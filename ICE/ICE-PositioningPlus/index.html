@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>	
+<html lang="en">
+<head>
+	<title>Responsive Styled Site</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--Fonts-->
+	<!-- ********** Colleen - I removed two fonts -->	
+	<link href="https://fonts.googleapis.com/css?family=Cherry+Swash" rel="stylesheet">
+	<!--Icon Library for Social Media-->
+	<!-- ********** Colleen - I removed CDN for font-awesome -->
+
+	<!--Style-->
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--Javascript-->
+	<script type="text/javascript" src="js/interactivity.js"></script>
+	<!--Favicon-->
+	<!-- ********** Colleen - Add your own favicon -->	
+
+</head>
+<body class="body body-home">
+	<a href="#main-content" class="skip">Skip navigation</a> 
+	<header>
+		<nav id = "top-nav" class="top-nav">
+       		<div class="logo">
+			<!--********** Colleen - This is a ridiculous logo, change it.-->         	<a href="index.html"><img src="https://s-i.huffpost.com/gadgets/slideshows/359097/slide_359097_3998986_free.jpg" alt="maddiefactured home"></a>
+       		</div>
+
+       		<div class="menu-icon">
+			<!--******COLLEEN - Some JavaScript we will get to next week or after break-->       			<a id="toggle-icon" href="javascript:void(0);" onclick="toggleMenu()">&#9776; Menu</a>
+       		</div>
+	       <ul>
+	            <li><a class="current-page" href="index.html">HOME</a></li>
+	            <li><a href="#">Topic One</a></li>
+	            <li><a href="#">Topic Two</a></li>
+	            <li><a href="images.html">Images</a></li>
+	        </ul>   
+   		</nav>
+	</header>
+	<div id="main-content" class="main-content main-content-home">
+		<section class="home-flag">
+			<p>This is my main content.  Note that if you make the screen very small the navigation remains "stuck" to the top of the screen, but doesn't cover my content at page load.  What type of positioning do I need for this?</p>
+			<p>Now check out the footer.  No matter how large I make the screen the footer stays at the bottom, not floating mid-browser.</p>
+
+			</div>
+		</section>
+	</div>
+	<footer class="footer">
+	<!-- *********COLLEEN - I am missing something here accessibility-ise with these font Awesome Icons. -->
+		<a href="http://www.linkedin.com/in/"><i class="fa fa-link"></i></a> 
+		<a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a>
+		<a href="mailto:yourname@umich.edu?Subject=Hello%Responsive In Class Exercise"><i class="fa fa-envelope"></i>
+</a>
+		<p>This site was created from the excellent portfolio by Maddie Goforth &copy; 2017</p>
+	</footer>
+</body>
+</html>
