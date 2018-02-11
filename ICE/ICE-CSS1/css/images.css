@@ -1,0 +1,159 @@
+img {
+	position: inline-block;
+	
+}
+
+body{
+	align-items: center;
+	text-align: center;
+}
+
+
+.hover{
+	width:150px;
+	height: 150px;
+	border-radius: 25px;
+	padding:10px;
+	margin:40px;
+	border-style: solid;
+	border-width:1px;
+	border-color:black;
+
+}
+
+.active{
+	width:150px;
+	height: 150px;
+	border-radius: 25px;
+	padding:10px;
+	margin:40px;
+	border-style: solid;
+	border-width:1px;
+	border-color:black;
+}
+
+.focus{
+	width:150px;
+	height: 150px;
+	border-radius: 25px;
+	padding:10px;
+	margin:40px;
+	border-style: solid;
+	border-width:1px;
+	border-color:black;
+
+}
+
+
+/*All three images would respond to all states: Hover, Active and Focus*/
+
+.hover:active{
+	border-radius: 150px;
+}
+
+.active:active {
+	opacity: 0.5;
+}
+
+.focus:active {
+	filter: grayscale(100%);
+}
+
+.hover:focus{
+	border-radius: 150px;
+}
+
+.active:focus {
+	opacity: 0.5;
+}
+
+.focus:focus {
+	filter: grayscale(100%);
+}
+
+.hover:hover{
+	border-radius: 150px;
+}
+
+.active:hover {
+	opacity: 0.5;
+}
+
+.focus:hover{
+	filter: grayscale(100%);
+}
+
+/****************************************************************/
+
+
+.bar{
+	height:25px;
+	width:1280;
+	margin:200px 0px 10px 10px;
+	background-color:black;
+}
+
+.square{
+	border-radius: 2px;
+	position:relative;
+    top: 2.5px;
+	width:20px;
+	height:20px;
+	background-color:yellow;
+
+
+}
+
+
+.bar:hover{
+	height:25px;
+	width:1280;
+	margin:200px 0px 10px 10px;
+	background-color:black;
+	animation: color 4s infinite ease;
+	animation-direction: alternate;
+}
+
+.bar:focus{
+	height:25px;
+	width:1280;
+	margin:200px 0px 10px 10px;
+	background-color:black;
+	animation: color 4s infinite ease;
+	animation-direction: alternate;
+}
+
+.square:hover{
+	transition-timing-function: ease;
+	transition-duration: infinite;
+	animation: spin 4s infinite linear;
+}
+
+.square:focus{
+	transition-timing-function: ease;
+	transition-duration: infinite;
+	animation: spin 4s infinite linear;
+}
+
+.square:active{
+	transition-timing-function: ease;
+	transition-duration: infinite;
+	animation: move 4s infinite linear;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);background-color:yellow;}
+    to {transform:rotate(360deg);background-color:red;}
+}
+
+@keyframes move {
+    0%  {background-color:yellow; left:0px;transform:rotate(0deg)}
+    100% {background-color:red; left:1260px;transform:rotate(360deg)}
+}
+
+@keyframes color {
+     0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
