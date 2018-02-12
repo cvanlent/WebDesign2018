@@ -85,10 +85,11 @@ header{
 /*mobile-first*/
 
 .top-nav ul{
+	/*width:100%;*/
 	list-style-type: none;
 	padding: 0;
 	background-color: #211D24; /*CHANGE*/
-	margin: 0;
+	margin: 0 auto;
 	display: block;
 	align-items: center;
     text-align: center;
@@ -96,7 +97,7 @@ header{
 }
 .top-nav ul li, .menu-icon{
 	border-top: 1px solid #DDDDDA; 
-	display:inline-block;/*CHANGE*/
+	/*display:block;*//*CHANGE*/
 }
 .top-nav ul li a{
 	font-size: 1em;
