@@ -1,0 +1,8 @@
+@media only screen and (min-width: 650px) {
+	.top-nav ul li{
+		display:inline-block;
+	}
+	body{
+		background-color: yellow;
+	}
+}
