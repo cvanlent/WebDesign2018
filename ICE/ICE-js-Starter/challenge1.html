@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Step 1: Hiding the email fields by default
+Add some plain old CSS style so that the "emailfield" paragraph isn't displayed when the page first loads (using the CSS 'display' property). Test to make sure this works.
+
+Step 2: Adding a function template
+Create a new function called toggleEmail() that simply displays an alert, ie. window.alert("Yep, my function is being called");
+Add an event so that when the checkbox is clicked your function is called and test that it works! 
+
+Step 3: Display the email fields
+Now we'll replace that alert() code so that our function actually does something useful! Using JavaScript, make the emailfield paragraph appear when the checkbox is clicked.
+
+Step 4: Making the email field toggle
+When you test your form at the moment, you'll notice that you can click on the checkbox and the email field displays, but when you un-check the checkbox the extra paragraph doesn't hide itself again!  Used the "checked" property to test whether a checkbox was checked.  Then use an if statement to toggle the emailfield appear and disappear as appropriate.
+-->
+  <head>
+    <title>JavaScript Challenges</title>
+    <style>
+    /*    YOUR CODE HERE - check Step 1*/ 
+    </style>
+    
+    <script type="text/javascript">
+	function toggleEmail(){
+		/*    YOUR CODE HERE - check Step 1*/ 
+
+	} 
+    </script>
+  </head>
+  <body>
+    <h1>Challenge One</h1>
+    <form action="challenge2.html">
+      <fieldset>
+        <legend>Email subscriptions</legend>
+        <div id="check">
+          <label>
+            <input type="checkbox" name="subscribe" id="subscribe" onchange="toggleEmail()">
+            Check to toggle the email field.
+          </label>
+        </div>
+
+        <div id="emailfield">
+          <label>
+            Email Address: 
+            <input type="text" name="email" id="email">
+          </label>
+        </div>
+
+        <input type = "submit" value = "Go To Challenge 2">
+      </fieldset>
+    </form>
+  </body>
+</html>
