@@ -1,0 +1,130 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+                  
+
+header {
+	text-align: right;
+	background-color: yellow;
+}
+header h1 {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+nav ul li a{
+	color: white;
+	background-color: black;
+	padding-top:9px;
+	padding-bottom:9px;
+	padding-left:20%;
+	padding-right: 20%;
+	text-decoration: none;
+}
+nav {
+	display: table;
+	background-color: green;
+	width:100%;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+nav ul li {
+	display: inline;
+	float:left;
+	width: 18%;
+	white-space: nowrap;
+}
+nav ul {
+	box-sizing: border-box;
+	width: 100%;
+	float:left;
+	margin-top:0px;
+	margin-bottom:0px;
+	text-align: center justify;
+}
+
+
+#wrap {
+	overflow:auto;
+	margin: 0 auto;
+}
+aside {
+	float: right;
+	width: 20%;
+}
+aside h2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+aside ul {
+	margin:0px;
+}
+#content {
+	float:left;
+	width: 80%;
+	background-color:#606060;
+}
+#content h1 {
+	font-size:30px;
+	font-weight:bold;
+}
+#content ul {
+	list-style: none;
+	text-align: center;
+	margin:0px;
+}
+footer {
+	float:left;
+	width:80%;
+	box-sizing: border-box;
+	background-color:green;
+	padding: 20px
+
+}
+
+
+
